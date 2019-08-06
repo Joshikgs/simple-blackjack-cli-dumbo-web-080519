@@ -37,15 +37,13 @@ def hit?(card_total)
     card_total += deal_card
   elsif user_input == "s"
     card_total
-  else
+  elsif input.downcase != "h" || input.downcase != "s"
     invalid_command
   end
 end
 
 def invalid_command
-  if input.downcase != "h" || input.downcase != "s"
-    puts "Please enter a valid command"
-  end
+  puts "Please enter a valid command"
 end
 
 #####################################################
