@@ -39,7 +39,6 @@ def hit?(card_total)
     card_total
   else
     invalid_command
-    gets.chomp
   end
 end
 
