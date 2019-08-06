@@ -43,7 +43,9 @@ def hit?(card_total)
 end
 
 def invalid_command
-  puts "Please enter a valid command"
+  if input.downcase != "h" || input.downcase != "s"
+    puts "Please enter a valid command"
+  end
 end
 
 #####################################################
