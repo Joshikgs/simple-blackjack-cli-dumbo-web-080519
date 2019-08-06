@@ -43,7 +43,7 @@ def hit?(card_total)
 end
 
 def invalid_command
-  puts "Type 'h' to hit or 's' to stay"
+  puts "Please enter a valid command"
 end
 
 #####################################################
