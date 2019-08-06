@@ -37,8 +37,9 @@ def hit?(card_total)
     card_total += deal_card
   elsif user_input == "s"
     card_total
-  elsif input.downcase != "h" || input.downcase != "s"
+  else
     invalid_command
+    gets.chomp
   end
 end
 
